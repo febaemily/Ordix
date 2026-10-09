@@ -1,0 +1,61 @@
+order_id,order_date,customer_name,city,product,category,quantity,unit_price_inr,total_inr,payment_method,status
+ORD-1001,2026-06-01,Rahul Sharma,Hyderabad,Wireless Mouse,Electronics,2,799,1598,Debit Card,delivered
+ORD-1002,2026-06-02,Aditya Kumar,Pune,Backpack,Accessories,5,2499,12495,Credit Card,delivered
+ORD-1003,2026-06-03,Sneha Pillai,Bengaluru,Gel Pen Set,Stationery,2,199,398,Debit Card,delivered
+ORD-1004,2026-06-07,Fathima Rahman,Chennai,Desk Lamp,Furniture,3,1299,3897,UPI,returned
+ORD-1005,2026-06-07,Sneha Pillai,Bengaluru,Laptop Sleeve,Accessories,1,999,999,Cash on Delivery,cancelled
+ORD-1006,2026-06-08,Vikram Reddy,Chennai,Water Bottle,Accessories,1,599,599,Net Banking,delivered
+ORD-1007,2026-06-09,Ananya Iyer,Chennai,Gel Pen Set,Stationery,3,199,597,Credit Card,delivered
+ORD-1008,2026-06-12,Sneha Pillai,Bengaluru,Water Bottle,Accessories,1,599,599,UPI,delivered
+ORD-1009,2026-06-15,Arjun Nair,Kochi,Water Bottle,Accessories,5,599,2995,Credit Card,delivered
+ORD-1010,2026-06-15,Rohan Das,Thiruvananthapuram,Wireless Mouse,Electronics,3,799,2397,Net Banking,returned
+ORD-1011,2026-06-16,Meera Thomas,Kochi,Laptop Sleeve,Accessories,2,999,1998,UPI,delivered
+ORD-1012,2026-06-20,Lakshmi Varma,Kochi,Backpack,Accessories,2,2499,4998,Debit Card,delivered
+ORD-1013,2026-06-24,Priya Menon,Thiruvananthapuram,Notebook Pack,Stationery,5,349,1745,Net Banking,delivered
+ORD-1014,2026-06-26,Aditya Kumar,Pune,Backpack,Accessories,2,2499,4998,Debit Card,delivered
+ORD-1015,2026-06-28,Vikram Reddy,Chennai,Standing Desk,Furniture,1,21999,21999,Debit Card,cancelled
+ORD-1016,2026-06-29,Priya Menon,Thiruvananthapuram,Desk Lamp,Furniture,1,1299,1299,Debit Card,delivered
+ORD-1017,2026-06-30,Nikhil Gupta,Chennai,Water Bottle,Accessories,1,599,599,Debit Card,delivered
+ORD-1018,2026-06-30,Divya Joseph,Thiruvananthapuram,Wireless Mouse,Electronics,2,799,1598,Credit Card,cancelled
+ORD-1019,2026-07-01,Rohan Das,Thiruvananthapuram,Mechanical Keyboard,Electronics,5,3499,17495,UPI,delivered
+ORD-1020,2026-07-02,Vikram Reddy,Chennai,USB-C Hub,Electronics,1,1899,1899,Net Banking,delivered
+ORD-1021,2026-07-02,Vikram Reddy,Chennai,USB-C Hub,Electronics,2,1899,3798,Cash on Delivery,delivered
+ORD-1022,2026-07-06,Meera Thomas,Kochi,Noise Cancelling Headphones,Electronics,2,8999,17998,Credit Card,delivered
+ORD-1023,2026-07-06,Karthik Rao,Kochi,Laptop Sleeve,Accessories,1,999,999,Credit Card,delivered
+ORD-1024,2026-07-07,Nikhil Gupta,Chennai,Water Bottle,Accessories,2,599,1198,Net Banking,delivered
+ORD-1025,2026-07-14,Karthik Rao,Kochi,Wireless Mouse,Electronics,3,799,2397,Credit Card,delivered
+ORD-1026,2026-07-16,Rohan Das,Thiruvananthapuram,Mechanical Keyboard,Electronics,2,3499,6998,Cash on Delivery,delivered
+ORD-1027,2026-07-18,Rohan Das,Thiruvananthapuram,Standing Desk,Furniture,3,21999,65997,Net Banking,delivered
+ORD-1028,2026-07-21,Rohan Das,Thiruvananthapuram,Noise Cancelling Headphones,Electronics,2,8999,17998,Cash on Delivery,returned
+ORD-1029,2026-07-23,Meera Thomas,Kochi,Water Bottle,Accessories,5,599,2995,UPI,delivered
+ORD-1030,2026-07-25,Lakshmi Varma,Kochi,27-inch Monitor,Electronics,2,15999,31998,Cash on Delivery,cancelled
+ORD-1031,2026-07-28,Ananya Iyer,Chennai,Noise Cancelling Headphones,Electronics,2,8999,17998,Cash on Delivery,delivered
+ORD-1032,2026-07-29,Karthik Rao,Kochi,27-inch Monitor,Electronics,1,15999,15999,Debit Card,delivered
+ORD-1033,2026-08-01,Karthik Rao,Kochi,USB-C Hub,Electronics,2,1899,3798,Cash on Delivery,delivered
+ORD-1034,2026-08-02,Priya Menon,Thiruvananthapuram,Mechanical Keyboard,Electronics,3,3499,10497,Net Banking,delivered
+ORD-1035,2026-08-04,Nikhil Gupta,Chennai,Notebook Pack,Stationery,1,349,349,Debit Card,delivered
+ORD-1036,2026-08-05,Ananya Iyer,Chennai,Office Chair,Furniture,1,7499,7499,UPI,delivered
+ORD-1037,2026-08-07,Divya Joseph,Thiruvananthapuram,Standing Desk,Furniture,2,21999,43998,Net Banking,delivered
+ORD-1038,2026-08-07,Suresh Babu,Thiruvananthapuram,Notebook Pack,Stationery,5,349,1745,UPI,delivered
+ORD-1039,2026-08-08,Rohan Das,Thiruvananthapuram,Gel Pen Set,Stationery,1,199,199,Credit Card,delivered
+ORD-1040,2026-08-10,Fathima Rahman,Chennai,Water Bottle,Accessories,5,599,2995,UPI,delivered
+ORD-1041,2026-08-14,Karthik Rao,Kochi,Mechanical Keyboard,Electronics,3,3499,10497,Net Banking,cancelled
+ORD-1042,2026-08-16,Rohan Das,Thiruvananthapuram,Water Bottle,Accessories,2,599,1198,Cash on Delivery,delivered
+ORD-1043,2026-08-16,Ananya Iyer,Chennai,Gel Pen Set,Stationery,2,199,398,Net Banking,delivered
+ORD-1044,2026-08-17,Fathima Rahman,Chennai,Office Chair,Furniture,1,7499,7499,UPI,delivered
+ORD-1045,2026-08-20,Vikram Reddy,Chennai,Notebook Pack,Stationery,5,349,1745,Debit Card,cancelled
+ORD-1046,2026-08-20,Priya Menon,Thiruvananthapuram,Wireless Mouse,Electronics,3,799,2397,Credit Card,delivered
+ORD-1047,2026-08-21,Vikram Reddy,Chennai,Standing Desk,Furniture,2,21999,43998,Credit Card,delivered
+ORD-1048,2026-08-22,Vikram Reddy,Chennai,Water Bottle,Accessories,5,599,2995,UPI,delivered
+ORD-1049,2026-08-23,Ananya Iyer,Chennai,Notebook Pack,Stationery,3,349,1047,Cash on Delivery,delivered
+ORD-1050,2026-08-24,Rahul Sharma,Hyderabad,Water Bottle,Accessories,1,599,599,Net Banking,delivered
+ORD-1051,2026-08-25,Sneha Pillai,Bengaluru,Office Chair,Furniture,1,7499,7499,UPI,delivered
+ORD-1052,2026-08-25,Ananya Iyer,Chennai,Notebook Pack,Stationery,1,349,349,Credit Card,delivered
+ORD-1053,2026-09-03,Arjun Nair,Kochi,Noise Cancelling Headphones,Electronics,2,8999,17998,UPI,delivered
+ORD-1054,2026-09-05,Suresh Babu,Thiruvananthapuram,Noise Cancelling Headphones,Electronics,2,8999,17998,Debit Card,delivered
+ORD-1055,2026-09-08,Rahul Sharma,Hyderabad,Water Bottle,Accessories,2,599,1198,UPI,delivered
+ORD-1056,2026-09-18,Vikram Reddy,Chennai,Water Bottle,Accessories,1,599,599,UPI,delivered
+ORD-1057,2026-09-19,Suresh Babu,Thiruvananthapuram,Mechanical Keyboard,Electronics,1,3499,3499,UPI,delivered
+ORD-1058,2026-09-20,Vikram Reddy,Chennai,USB-C Hub,Electronics,2,1899,3798,Cash on Delivery,cancelled
+ORD-1059,2026-09-27,Karthik Rao,Kochi,Desk Lamp,Furniture,1,1299,1299,Debit Card,processing
+ORD-1060,2026-09-28,Rahul Sharma,Hyderabad,Notebook Pack,Stationery,3,349,1047,Credit Card,shipped

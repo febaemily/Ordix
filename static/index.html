@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORDIX — Orders Simplified</title>
+  <meta name="description" content="A simple, neat, professional AI assistant for exploring orders, revenue, customers, and payments.">
+
+  <!-- Inter Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%22100%22%20%22100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23171717%22/><text x=%2250%22 y=%2266%22 font-size=%2254%22 font-family=%22sans-serif%22 font-weight=%22bold%22 text-anchor=%22middle%22 fill=%22%23FFFFFF%22>O</text></svg>">
+  <script>
+    // Prevent splash flash if already viewed in this browser session
+    if (sessionStorage.getItem('ordix_splash_shown') === 'true') {
+      document.documentElement.classList.add('splash-dismissed');
+    }
+  </script>
+</head>
+<body>
+  <!-- Simple Professional Splash Screen (Shown once per session) -->
+  <div id="splashScreen" class="splash-screen" aria-hidden="true">
+    <div class="splash-content">
+      <div class="splash-logo-mark">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+          <path d="m3.3 7 8.7 5 8.7-5"></path>
+          <path d="M12 22V12"></path>
+        </svg>
+      </div>
+      <h1 class="splash-brand">ORDIX</h1>
+      <p class="splash-caption">Orders Simplified</p>
+    </div>
+  </div>
+
+  <div class="app-layout">
+    <!-- Small, Clean Header -->
+    <header class="app-header">
+      <div class="header-content">
+        <div class="brand">
+          <div class="brand-logo" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+              <path d="m3.3 7 8.7 5 8.7-5"></path>
+              <path d="M12 22V12"></path>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-title">ORDIX</span>
+            <span class="brand-sep" aria-hidden="true">—</span>
+            <span class="brand-subtitle">Orders Simplified</span>
+          </div>
+        </div>
+
+        <button id="newChatBtn" class="btn-new-chat" aria-label="Start a new chat" title="Start a fresh conversation">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+          <span>New Chat</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Centered Chat Container (800-900px) -->
+    <main class="chat-main">
+      <div class="chat-container" id="chatContainer">
+        
+        <!-- Welcoming First Screen -->
+        <div class="welcome-screen" id="welcomeScreen">
+          <div class="welcome-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
+              <path d="m3.3 7 8.7 5 8.7-5"></path>
+              <path d="M12 22V12"></path>
+            </svg>
+          </div>
+          <h1 class="welcome-title">Welcome to ORDIX</h1>
+          <p class="welcome-subtitle">Your AI assistant for exploring orders, revenue, customers, and payments.</p>
+
+          <!-- Four Simple Clickable Example Questions -->
+          <div class="example-questions-container">
+            <div class="example-grid">
+              <button class="example-chip" data-query="Which month had the highest revenue?">
+                <span class="chip-text">Which month had the highest revenue?</span>
+                <span class="chip-arrow" aria-hidden="true">→</span>
+              </button>
+              <button class="example-chip" data-query="Who spent the least?">
+                <span class="chip-text">Who spent the least?</span>
+                <span class="chip-arrow" aria-hidden="true">→</span>
+              </button>
+              <button class="example-chip" data-query="Who paid online?">
+                <span class="chip-text">Who paid online?</span>
+                <span class="chip-arrow" aria-hidden="true">→</span>
+              </button>
+              <button class="example-chip" data-query="How many orders are pending?">
+                <span class="chip-text">How many orders are pending?</span>
+                <span class="chip-arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conversation Messages List -->
+        <div class="messages-list" id="messagesList"></div>
+
+        <!-- Loading Feedback Indicator -->
+        <div class="loading-indicator" id="loadingIndicator" style="display: none;">
+          <div class="avatar-bot">O</div>
+          <div class="loading-bubble">
+            <div class="dots-pulse" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <span class="loading-text" id="loadingText">ORDIX is checking your order data...</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Message Composer at the Bottom -->
+      <div class="composer-wrapper">
+        <div class="composer-inner">
+          <form class="composer-box" id="chatForm">
+            <textarea
+              id="chatInput"
+              class="composer-input"
+              rows="1"
+              placeholder="Ask anything about your orders..."
+              aria-label="Ask anything about your orders"
+              maxlength="1000"
+            ></textarea>
+            <button type="submit" id="sendBtn" class="composer-btn" aria-label="Send message" title="Send message">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+          <div class="composer-footer">
+            <span>Press <strong>Enter</strong> to send, <strong>Shift + Enter</strong> for a new line</span>
+            <span class="footer-dot">•</span>
+            <span>Grounded in verified orders</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Friendly Error / Toast Notification -->
+  <div id="toastNotification" class="toast-banner" style="display: none;">
+    <span class="toast-message" id="toastMessage">An error occurred.</span>
+    <div class="toast-actions">
+      <button id="toastRetryBtn" class="toast-btn toast-retry">Retry</button>
+      <button id="toastDismissBtn" class="toast-btn toast-close" aria-label="Dismiss">×</button>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
